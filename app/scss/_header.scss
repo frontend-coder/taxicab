@@ -401,14 +401,89 @@
 	margin-bottom: 18px;
 }
 .wish_wrap_item_content p {
-text-align: left;
+	text-align: left;
 
 }
 
 .block_wish .sector_button {
-background-color: $accent_color;
-color:#000;
+	background-color: $accent_color;
+	color:#000;
 }
 
 
 
+.block_best {
+	padding: 65px 0 0 0;
+	text-align: center;
+
+}
+.block_best .wish_title {
+	color:#000;
+
+}
+.best_item_content {
+	padding: 0 200px 0 100px;
+	width: 100% - ( (375 / 1140) *100% );
+}
+.best_item_picture {
+	width: (375 / 1140) *100%;
+	& img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.best_item_title {
+	@include font-size(25px);
+	text-transform: uppercase;
+	font-family: "LatoBlack", sans-serif;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.best_item_desc {
+	@include font-size(18px);
+	margin-bottom: 54px;
+	text-align: left;
+}
+.best_item_list {
+	list-style: none;
+	display: flex;
+}
+.best_item_list li  {
+	margin-right: 12px;
+}
+.google_button {
+	background:transparent url('../img/google-button.png') center center no-repeat;
+	background-size: 210px 65px;
+	width: 210px;
+	height:65px ;
+	display: block;
+}
+
+.apple_button {
+	background:transparent url('../img/apple-button.png') center center no-repeat;
+	background-size: cover;
+	width: 210px;
+	height:65px ;
+	display: block;
+
+}
+
+
+
+.block_or {
+	background-color:  $accent_color;
+	padding: 70px 0 95px 0;
+	text-align: center;
+}
+.block_or .wish_title {
+	margin-bottom: 40px;
+	color:#000;
+	font-family: "LatoBlack", sans-serif;
+}
+
+.block_or .header_phone {
+	color:#000;
+	font-family: "LatoBlack", sans-serif;
+}
