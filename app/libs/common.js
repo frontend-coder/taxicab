@@ -16,6 +16,37 @@ $(document).ready(function () {
 	});
 
 
+		$('#clients_slider').slick({
+  dots: false,
+  arrows:true,
+  autoplay:true,
+  autoplaySpeed:1500,
+ // infinite: true,
+ //slidesToShow:2,
+  //slidesToScroll:2,
+    responsive: [
+     {
+      breakpoint: 1920,
+      settings: {
+        slidesToShow: 2,
+  ///      slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 1,
+  ///      slidesToScroll: 1
+      }
+    }
+   ]
+});
+
+
+
+
+
+
 
 
 	//Ajax push mesege http://api.jquery.com/jquery.ajax/

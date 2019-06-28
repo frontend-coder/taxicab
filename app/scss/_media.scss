@@ -1,203 +1,305 @@
+// Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap
 
-
-/*==========  Desktop First  ==========*/
-@media only screen and (max-width : 1440px) {
-
-}
-
-@media only screen and (max-width : 1280px) {
-
-}
-
-@media only screen and (max-width : 1200px) {
-
-}
-
-
-@media only screen and (max-width : 1190px) {
-
-}
-// 1112
-@media screen and (max-width: 1080px) {
-/* делать это разрешение */
-}
-/* первое разрешение под казачика */
-@media only screen and (max-width: 1024px) {
-/* делать это разрешение */
-
-}
-
-
-@media only screen and (max-width: 992px) {
-
-}
-
-
-@media only screen and (max-width: 834px) {
-
-
-}
-
-@media only screen and (max-width: 812px) {
-
-
-}
-
-@media only screen and (max-width: 800px) {
-
-
-}
-
-@media only screen and (max-width: 768px) {
-
-/*Disable Animation on Mobile Devices*/
-.animated {
-  /*CSS transitions*/
-  -o-transition-property: none !important;
-  -moz-transition-property: none !important;
-  -ms-transition-property: none !important;
-  -webkit-transition-property: none !important;
-  transition-property: none !important;
-  /*CSS transforms*/
-  -o-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-  /*CSS animations*/
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-}
-}
-
-
-/* end  (max-width: 768px) */
-@media only screen and (max-width: 740px) {
-
-}
-
-@media only screen and (max-width: 736px) {
-
-
-
-}
-
-@media only screen and (max-width: 734px) {
-
-
-
-}
-
-@media only screen and (max-width: 684px) {
-
-
-
-}
-
-@media only screen and (max-width: 667px) {
-
-
-
-}
-
-@media only screen and (max-width: 640px) {
-
-
-
-
-}
-
-@media only screen and (max-width: 600px) {
-/* делать это разрешение */
-
-
-}
-
-@media only screen and (max-width: 568px) {
-
-
-
-}
-
-@media only screen and (max-width: 480px) {
-/* делать это разрешение */
-
-
-}
-
-@media only screen and (max-width: 425px) {
-
-
-
-}
-
-@media only screen and (max-width: 414px) {
-
-
-
-}
-
-@media only screen and (max-width: 412px) {
-
-
-
-}
-
-@media only screen and (max-width: 384px) {
-
-
-
-}
-
-@media only screen and (max-width: 375px) {
-
-
-
-}
-
-@media only screen and (max-width: 360px) {
-
-
-
-}
-
-@media only screen and (max-width: 320px) {
-
-
-
-}
-
-
-
-/*==========  Mobile First  ==========*/
-
-
-
-
-/*
-// Small devices (landscape phones, 576px and up) */
+// Малые девайсы («ландшафтные телефоны», >= 576px)
 @media (min-width: 576px) {
 
-	}
-/*
-// Medium devices (tablets, 768px and up)
- */
+}
+
+// Средние девайсы («таблетки», >= 768px)
 @media (min-width: 768px) {
 
-	 }
-/*
-// Large devices (desktops, 992px and up)
- */
+}
+
+// Большие девайсы (десктопы, >= 992px)
 @media (min-width: 992px) {
 
 
-	}
-/*
-// Extra large devices (large desktops, 1200px and up) */
+
+
+}
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (min-width: 1200px) {
 
 
-	}
+
+
+
+
+
+}
+
+
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+}
+
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
+
+}
+
+
+
+
+
+
+// Экстрабольшие девайсы (большие десктопы)
+// Тут нет @media, т.к. такие брейпкойнты не имеют верхней границы по ширине width
+@media (max-width: 1280px) {
+  .container_wrap,
+  .container {
+    max-width: 1140px;
+  }
+
+}
+
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1200px) {
+  .block_or .wish_title {
+    font-size: 2.0rem;
+  }
+
+  .block_or .header_phone {
+    font-size: 4.0rem;
+  }
+
+  .block_testimonials {
+   padding: 80px 0 60px 0;
+ }
+
+ .logo img {
+   width: 61%;
+ }
+}
+
+
+@media (max-width: 1080px) {
+  .yellow_left {
+    padding-right: 100px;
+  }
+
+  .tarif_items {
+    flex-wrap: wrap;
+  }
+  .container_wrap,
+  .container {
+   max-width: 1080px - 140px;
+ }
+ .tarif_wrap {
+  flex-wrap: wrap;
+}
+.tarif_items {
+  margin-top: 100px;
+  flex-basis: 47%;
+}
+.wish_wrap {
+  flex-wrap: wrap;
+}
+.best_item_content,
+.best_item_picture {
+  width: 100%;
+
+}
+.best_item_picture {
+  order:-1;
+}
+.best_item_picture img {
+  display: block;
+  width: 30%;
+  margin:0 auto 20px;
+}
+.best_item_content {
+  padding: 0 50px 0 50px;
+}
+.block_tarif,
+.block_best,
+.block_testimonials,
+.block_or,
+.block_wish {
+  padding: 50px 0 50px 0;
+}
+
+footer {
+  padding: 50px 0 0 0;
+}
+.block {
+  padding: 130px 0 50px 0;
+}
+.footer_dounload {
+ width: 100%;
+}
+.top_line_menu {
+// display: none;
+
+}
+
+.top_line_menu ul li a {
+ font-size: 1.0rem;
+ padding: 10px 15px;
+}
+}
+
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 1024px) {
+
+}
+
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 992px) {
+  .wish_title {
+    margin-bottom: 50px;
+  }
+  .wish_wrap_item {
+    width: 47%;
+  }
+  .container_wrap,
+  .container {
+    max-width: 940px;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+  .container_wrap, .container {
+    max-width: 720px;
+  }
+
+  .top_line_menu {
+    display: none;
+  }
+
+  .header_fon {
+    min-height: 487px;
+  }
+
+  .header_content_car {
+    background: url(../img/price_tax.png) center center no-repeat;
+    bottom: -15%;
+    left: 50%;
+    width: 366px;
+    height: 178px;
+    margin-left: -1px * (366 / 2);
+
+  }
+
+  .yellow_block_wrap {
+    flex-wrap: wrap;
+  }
+
+  .yellow_left, .yellow_right {
+   flex-basis: 100%;
+ }
+ .yellow_left {
+  margin-bottom: 40px;
+}
+.tarif_items {
+  flex-basis: 80%;
+  margin:100px auto;
+}
+.tarif_items_car {
+  left:50%;
+  top:50%;
+  margin-left: -1px * (366 /2 );
+  margin-top: -125px;
+}
+.tarif_items {
+  margin: 69px auto;
+}
+.footer_wrap {
+  flex-wrap: wrap;
+}
+.wish_wrap_item {
+  width: 80%;
+  margin: 0 auto 60px;
+}
+.footer_items {
+  width: 80%;
+  margin: 0 auto 60px;
+}
+
+
+}
+
+
+
+@media (max-width: 576px) {
+ .container_wrap, .container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.slick-slider {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.bookacab_block_title, .form_book {
+  width: 90%;
+  margin:0 auto;
+}
+
+}
+
+
+
+@media (max-width: 480px) {
+ html, body {
+    overflow-x: hidden;
+  }
+  .header_title {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+  }
+  .header_phone {
+    font-size: 2.8rem;
+     margin-bottom: 20px;
+  }
+  .header_link {
+    font-size: 0.7rem;
+
+  }
+  .best_item_list {
+    flex-wrap: wrap;
+  }
+  .best_item_list li {
+   margin-right: 0;
+   margin-bottom: 10px;
+ }
+
+ .header_fon {
+min-height: 403px;
+}
+.block {
+padding: 90px 0 50px 0;
+}
+.yellow_title {
+font-size: 2.55rem;
+}
+.yellow_left {
+padding-right: 0px;
+}
+.tarif_items_car {
+       margin-top: -170px;
+      }
+.wish_wrap_item_icon {
+        width: 60px;
+        height: 60px;
+      }
+
+
+.wish_wrap_item_content {
+  padding-left: 10px;
+}
+}

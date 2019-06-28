@@ -5,6 +5,7 @@
 	min-height: 740px;
 	position: relative;
 }
+
 .header_fon:before {
 	content: '';
 	background-color: rgba(#0f0f0f, .7);
@@ -19,9 +20,11 @@
 	padding: 24px 0;
 
 }
+
 .container_wrap {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	position: relative;
 	width: 1400px;
 	margin: 0 auto;
@@ -31,15 +34,18 @@
 	padding: 0;
 	margin: 0;
 }
+
 .logo img{
 	display: inline-block;
 	width: 100%;
 	height: auto;
 }
+
 .top_line_menu {
 	padding: 0;
 	margin: 0;
 }
+
 .top_line_menu ul {
 	list-style: none;
 	display: flex;
@@ -56,6 +62,7 @@
 	border-radius: 18px;
 	@include transition(all, 0.3s, ease);
 }
+
 .top_line_menu ul li a:hover {
 	background-color:  $accent_color;
 }
@@ -79,13 +86,12 @@
 	//margin-top: -(484 / 2) * 1px;
 }
 
-
-
 .header_title {
 	color: $accent_color;
 	@include font-size(35px);
 	text-transform: uppercase;
 }
+
 .header_phone,
 .header_link {
 	color:#fff;
@@ -107,7 +113,6 @@
 	color: darken(#fff, 50% );
 }
 
-
 .yellow_block_wrap {
 	display: flex;
 	justify-content: space-between;
@@ -117,12 +122,11 @@
 	flex-basis: 63%;
 	padding-right: 215px;
 }
+
 .yellow_right {
 
 	flex-basis: 37%;
 }
-
-
 
 .yellow_descr {
 	@include font-size(35px);
@@ -130,21 +134,21 @@
 	text-transform: uppercase;
 	margin-bottom: 25px;
 }
+
 .yellow_title {
 	@include font-size(50px);
 	font-family: "LatoBlack", sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 45px;
 }
+
 .yellow_text {
 	@include font-size(18px);
 	margin-bottom: 60px;
 }
 
-
 .bookacab_block {
 	width: 100%;
-
 }
 
 .bookacab_block_title {
@@ -155,6 +159,7 @@
 	color:#fff;
 	font-family: "LatoBlack", sans-serif;
 }
+
 .form_book {
 	padding: 30px;
 	display: -webkit-flex;
@@ -179,12 +184,13 @@
 	height: 40px;
 	line-height: 40px;
 	margin-bottom: 20px;
-
 }
+
 .form_book_input_choice {
 	width: 100%;
 	margin-bottom: 44px;
 }
+
 .form_book_submit {
 	font-family: "BebasNeueBold", sans-serif;
 	@include font-size(29px);
@@ -197,6 +203,7 @@
 	border-radius: 10px;
 	cursor: pointer;
 }
+
 .sector_button {
 	display: inline-block;
 	padding: 14px 34px;
@@ -211,15 +218,15 @@
 	cursor: pointer;
 }
 
-
-
 .block_tarif {
 	padding: 60px 0 80px 0;
 }
+
 .tarif_wrap {
 	display: flex;
 	justify-content: space-between;
 }
+
 .tarif_items {
 	margin-top: 75px;
 	flex-basis: 32%;
@@ -233,7 +240,6 @@
 .tarif_items:before {
 	right: -35px;
 	bottom:-7px;
-
 	position: absolute;
 	@include triangle(55px, down, #000);
 	transform: rotate(-45deg);
@@ -241,6 +247,7 @@
 	content: '';
 	opacity: 0;
 }
+
 .tarif_items:after {
 	right: 12px;
 	bottom:9px;
@@ -252,10 +259,10 @@
 	opacity: 0;
 }
 
-
 .tarif_items:hover {
 	background-color: $accent_color;
 }
+
 .tarif_items:hover:before,
 .tarif_items:hover:after {
 	opacity: 1;
@@ -267,25 +274,21 @@
 
 .tarif_items:hover .sector_button {
 	color: #fff;
-
 	background-color: #1b1b1b;
-
 }
-
-
-
 
 .tarif_title {
 	@include font-size(30px);
 	text-transform: uppercase;
 	font-family: "LatoBlack", sans-serif;
 	margin-bottom: 30px;
-
 }
+
 .tarif_terms {
 	margin-bottom: 40px;
 	@include font-size(18px);
 }
+
 .tarif_price {
 	@include font-size(40px);
 	text-transform: uppercase;
@@ -293,15 +296,12 @@
 	margin-bottom: 40px;
 	color:$accent_color;
 }
+
 .tarif_items .sector_button {
 	background-color: $accent_color;
 	color:#000;
 	font-weight: 800;
 }
-
-
-
-
 
 .tarif_items_car {
 	position: absolute;
@@ -309,9 +309,11 @@
 	// 	top:-75px;
 	transform:translateY(-115%);
 }
+
 .block_tarif {
 	text-align: center;
 }
+
 .tarif_title {
 	@include font-size(44px);
 	margin-bottom: 50px;
@@ -325,7 +327,6 @@
 	@include font-size(35px);
 }
 
-
 .block_wish {
 	padding: 70px 0;
 	background:transparent url('../img/you-wish.jpg') center center no-repeat;
@@ -334,6 +335,7 @@
 	position: relative;
 	text-align: center;
 }
+
 .header_fon:before {
 	content: '';
 	background-color: rgba(#0f0f0f, .7);
@@ -343,7 +345,6 @@
 	left:0;
 	position: absolute;
 }
-
 
 .wish_desc {
 	position: relative;
@@ -377,6 +378,7 @@
 	justify-content: space-between;
 	margin-bottom: 60px;
 }
+
 .wish_wrap_item_icon {
 	width: 72px;
 	height: 72px;
@@ -388,6 +390,7 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .wish_wrap_item_content {
 	position: relative;
 	color:#fff;
@@ -400,9 +403,9 @@
 	color:$accent_color;
 	margin-bottom: 18px;
 }
+
 .wish_wrap_item_content p {
 	text-align: left;
-
 }
 
 .block_wish .sector_button {
@@ -410,21 +413,20 @@
 	color:#000;
 }
 
-
-
 .block_best {
 	padding: 65px 0 0 0;
 	text-align: center;
-
 }
+
 .block_best .wish_title {
 	color:#000;
-
 }
+
 .best_item_content {
 	padding: 0 200px 0 100px;
 	width: 100% - ( (375 / 1140) *100% );
 }
+
 .best_item_picture {
 	width: (375 / 1140) *100%;
 	& img {
@@ -441,18 +443,22 @@
 	margin-bottom: 30px;
 	text-align: left;
 }
+
 .best_item_desc {
 	@include font-size(18px);
 	margin-bottom: 54px;
 	text-align: left;
 }
+
 .best_item_list {
 	list-style: none;
 	display: flex;
 }
+
 .best_item_list li  {
 	margin-right: 12px;
 }
+
 .google_button {
 	background:transparent url('../img/google-button.png') center center no-repeat;
 	background-size: 210px 65px;
@@ -467,16 +473,14 @@
 	width: 210px;
 	height:65px ;
 	display: block;
-
 }
-
-
 
 .block_or {
 	background-color:  $accent_color;
 	padding: 70px 0 95px 0;
 	text-align: center;
 }
+
 .block_or .wish_title {
 	margin-bottom: 40px;
 	color:#000;
@@ -486,4 +490,67 @@
 .block_or .header_phone {
 	color:#000;
 	font-family: "LatoBlack", sans-serif;
+}
+
+
+
+
+
+
+.block_testimonials {
+background:transparent url('../img/testimonials-fon.jpg') center center no-repeat;
+	background-size: cover;
+	// min-height: 740px;
+	position: relative;
+	padding: 100px 0 75px 0;
+text-align: center;
+}
+
+.block_testimonials:before {
+	content: '';
+	background-color: rgba(#0f0f0f, .7);
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	position: absolute;
+}
+
+
+
+
+.item-trademark {
+padding: 40px 52px 50px 52px;
+background-color: #040707;
+color:#fff;
+}
+.item-cont {
+@include font-size(18px);
+text-align: left;
+margin-bottom: 20px;
+}
+.item-cont_client {
+display: flex;
+
+}
+.item-cont_client img {
+width: 75px;
+height: 75px;
+border-radius: 50%;
+}
+.item-cont_text {
+	text-align: left;
+margin-left: 10px;
+}
+.slick-slide {padding: 0 15px;}
+
+.slick-prev:before, .slick-next:before {
+font-family: 'fontawesome';
+
+}
+.slick-prev:before {
+	content:'\f104';
+}
+.slick-next:before {
+content:'\f105';
 }
