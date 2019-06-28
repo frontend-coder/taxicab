@@ -4733,6 +4733,17 @@ body input:required:valid, body textarea:required:valid {
   margin-left: 10px;
 }
 
+.item-cont_text h3 {
+  font-size: 1.5625rem;
+  color: #ffc61a;
+  text-transform: uppercase;
+}
+
+.item-cont_text {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
 .slick-slide {
   padding: 0 15px;
 }
@@ -5192,12 +5203,38 @@ footer:before {
   }
 }
 
+@media (max-width: 980px) {
+  .container_wrap, .container {
+    max-width: 880px;
+  }
+  .header_content_car {
+    background: url(../img/header_fon_car_992.png) center center no-repeat;
+    bottom: -15%;
+    left: 50%;
+    width: 750px;
+    height: 439px;
+    margin-left: -375px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container_wrap, .container {
+    max-width: 770px;
+  }
+  .logo img {
+    width: 56%;
+  }
+  .top_line_menu ul li a {
+    padding: 10px 8px;
+  }
+}
+
 @media (max-width: 768px) {
   .mobile_box {
     display: block;
   }
   .container_wrap, .container {
-    max-width: 720px;
+    max-width: 710px;
   }
   .top_line_menu {
     display: none;
@@ -5206,12 +5243,18 @@ footer:before {
     min-height: 487px;
   }
   .header_content_car {
-    background: url(../img/price_tax.png) center center no-repeat;
-    bottom: -15%;
+    background: url(../img/header_fon_car_548.png) center center no-repeat;
+    bottom: -100%;
+    -webkit-transform: translateY(-105%);
+        -ms-transform: translateY(-105%);
+            transform: translateY(-105%);
     left: 50%;
-    width: 366px;
-    height: 178px;
-    margin-left: -183px;
+    width: 550px;
+    height: 322px;
+    margin-left: -275px;
+  }
+  .block {
+    padding: 150px 0 50px 0;
   }
   .yellow_block_wrap {
     -webkit-flex-wrap: wrap;
@@ -5265,7 +5308,7 @@ footer:before {
   .menu__list {
     position: absolute;
     background-color: #f8c255;
-    top: 30px;
+    top: 0;
     right: 5px;
     width: 532px;
     height: 80px;
@@ -5287,8 +5330,28 @@ footer:before {
 }
 
 @media (max-width: 480px) {
+  .header_content_car {
+    background: url(../img/header_fon_car_320.png) center center no-repeat;
+    bottom: -100%;
+    -webkit-transform: translateY(-164%);
+        -ms-transform: translateY(-164%);
+            transform: translateY(-164%);
+    left: 50%;
+    width: 320px;
+    height: 187px;
+    margin-left: -169px;
+  }
   html, body {
     overflow-x: hidden;
+  }
+  .menu__list {
+    width: 440px;
+  }
+  .menu__list--active, .top_menu_active {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .header_title {
     font-size: 2.0rem;
@@ -5331,6 +5394,21 @@ footer:before {
   }
   .wish_wrap_item_content {
     padding-left: 10px;
+  }
+  .footer_title {
+    padding-bottom: 20px;
+  }
+  .footer_items {
+    margin: 0 auto 30px;
+  }
+  .footer_bottom_line {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header_content_car {
+    display: none;
   }
 }
 
