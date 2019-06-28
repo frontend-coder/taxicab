@@ -158,9 +158,9 @@ gulp.task('rsync', function() {
 
 gulp.task( 'ftp', function () {
   var conn = vinyFTP.create( {
-   host:     'vh116.timeweb.ru',
-   user:     'cx76534',
-   password: 'PowO7q2Qcv2Y',
+   host:     'vh201.timeweb.ru',
+   user:     'cb96064',
+   password: 'ROZgrQQZTf3h',
    parallel: 10,
    log:      gulpUtil.log
  } );
