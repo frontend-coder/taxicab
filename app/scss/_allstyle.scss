@@ -8,3 +8,143 @@ background-color: $accent_color;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// стилизация навигации для сайта
+
+.humburger {
+	top:0;
+	right:9.7%;
+	padding: 0;
+	background:none;
+	@include transition(all, 2.5s, ease);
+	cursor: pointer;
+	display: block;
+	border: 3px solid rgb(233, 234, 226);
+	width: 50px;
+	height: 50px;
+display: flex;
+	position: absolute;
+
+}
+.nenu_humburger span {
+	margin: auto;
+	height: 3px;
+	width: 30px;
+	background-color: rgb(233, 234, 226);
+	display: block;
+
+	&:after,&:before {
+		width: 30px;
+		height: 3px;
+		background-color: rgb(233, 234, 226);
+		display: block;
+		margin:0 auto;
+		content: '';
+	}
+	&:after {
+		transform: translateY(7px);
+	}
+	&:before {
+		transform: translateY(-11px);
+	}
+
+}
+.menu,
+.menu__list {
+	@include transition(all, 2.5s, ease);
+}
+
+.humburger:active,
+.humburger:hover {
+	border-color:#f8c255;
+	@include transition(all, 2.5s, ease);
+}
+.humburger:active.nenu_humburger span,
+.humburger:active.nenu_humburger span:before,
+.humburger:active.nenu_humburger span:after,
+
+.humburger:hover.nenu_humburger span,
+.humburger:hover.nenu_humburger span:before,
+.humburger:hover.nenu_humburger span:after {
+	background-color: #fff;
+}
+
+.humburger_active {
+
+	border-color: #f8c255;
+z-index: 1; // чтобы крестик был выше меню
+}
+.humburger_active:hover,
+.humburger_active:active {
+	border-color: #f8c255;
+}
+
+.humburger_active span,
+.humburger_active span:after,
+.humburger_active span:before {
+	background-color: #f8c255;
+}
+
+.humburger_active span {
+	transform:rotate(45deg);
+
+}
+
+.humburger_active span:after {
+	transform:rotate(-90deg);
+	position: relative;
+	z-index: 1;
+}
+.humburger_active span:before {
+	display: none;
+}
+
+.top_menu_list,
+.menu__list {
+	position: absolute;
+	background-color: #f8c255;
+	top:0;
+	right: 5px;
+	width: 720px;
+	height: 50px;
+	list-style:none;
+	align-items: center;
+	padding-right: 56px;
+	justify-content: space-between;
+	display: none;
+	z-index: -99999;
+	@include transition(display, 10.5s, ease);
+}
+.menu__list--active,
+.top_menu_active {
+	display: flex;
+	z-index: 0;
+	@include transition(display, 10.5s, ease);
+}
+
+
+.menu ul li a {
+@include font-size(14px);
+	padding: 10px;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include transition(all, 0.5s, ease);
+}
+.menu ul li a:hover {
+	color:#000;
+
+}

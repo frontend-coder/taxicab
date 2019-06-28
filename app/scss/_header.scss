@@ -15,7 +15,12 @@
 	left:0;
 	position: absolute;
 }
-
+.mobile_box {
+	position: relative;
+ width: 56px;
+ height: 56px;
+	display: none;
+}
 .top_line {
 	padding: 24px 0;
 
