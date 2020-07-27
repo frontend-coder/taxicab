@@ -1,9 +1,10 @@
 footer {
 	padding: 70px 0 0 0;
-	background:transparent url('../img/header_fon.jpg') center center no-repeat;
+	background: transparent url('../img/header_fon.jpg') center center no-repeat;
 	background-size: cover;
 	min-height: 490px;
 	position: relative;
+	background-attachment: fixed;
 }
 
 footer:before {
@@ -11,8 +12,8 @@ footer:before {
 	background-color: rgba(#0f0f0f, .7);
 	width: 100%;
 	height: 100%;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	position: absolute;
 }
 
@@ -20,11 +21,11 @@ footer:before {
 
 
 
-.footer_title  {
-	color:#fff;
+.footer_title {
+	color: #fff;
 	text-transform: uppercase;
 	font-family: "LatoBlack", sans-serif;
-	border-bottom: 8px solid $accent_color  ;
+	border-bottom: 8px solid $accent_color;
 	padding-bottom: 36px;
 	margin-bottom: 40px;
 }
@@ -33,9 +34,10 @@ footer:before {
 	display: flex;
 	list-style: none;
 }
+
 .footer_social li a {
 	@include font-size(20px);
-	color:$accent_color;
+	color: $accent_color;
 	display: inline-block;
 	padding: 10px;
 }
@@ -65,7 +67,7 @@ footer:before {
 
 .footer_text {
 	@include font-size(18px);
-	color:#fff;
+	color: #fff;
 	margin-bottom: 40px;
 }
 
@@ -76,7 +78,7 @@ footer:before {
 	margin-top: 80px;
 	text-align: center;
 	position: relative;
-	color:#fff;
+	color: #fff;
 	background-color: rgba(#040300, .70);
 	@include font-size(14px);
 
@@ -84,23 +86,23 @@ footer:before {
 
 .footer_dounload {
 	list-style: none;
-	color:$accent_color;
+	color: $accent_color;
 	width: 80%;
 
 }
 
-.footer_dounload  li {
+.footer_dounload li {
 	position: relative;
 	margin-bottom: 30px;
 	@include font-size(20px);
 }
 
-.footer_dounload  li .fa {
+.footer_dounload li .fa {
 	@include font-size(30px);
-	color:#fff;
+	color: #fff;
 	position: absolute;
-	right:0;
-	top:15px;
+	right: 0;
+	top: 15px;
 	margin-top: -15px * 1.2;
 }
 
@@ -112,54 +114,56 @@ footer:before {
 
 
 .footer_contect li {
-position: relative;
-margin-bottom: 25px;
-	color:#fff;
-text-decoration: none;
-@include font-size(18px);
+	position: relative;
+	margin-bottom: 25px;
+	color: #fff;
+	text-decoration: none;
+	@include font-size(18px);
 }
+
 .footer_contect li a {
-	color:#fff;
-text-decoration: none;
-@include font-size(18px);
-position: relative;
+	color: #fff;
+	text-decoration: none;
+	@include font-size(18px);
+	position: relative;
 }
+
 .footer_contect li a[href*="tel:"]:before {
-position: absolute;
-left:-25px;
-top:-6px;
-content:'\f10b';
-font-family: 'fontawesome';
-@include font-size(25px);
+	position: absolute;
+	left: -25px;
+	top: -6px;
+	content: '\f10b';
+	font-family: 'fontawesome';
+	@include font-size(25px);
 }
+
 .footer_contect li a[href*="mailto:"]:before {
-position: absolute;
-left:-25px;
-top:0;
-content:'\f0e0';
-font-family: 'fontawesome';
-@include font-size(15px);
+	position: absolute;
+	left: -25px;
+	top: 0;
+	content: '\f0e0';
+	font-family: 'fontawesome';
+	@include font-size(15px);
 }
 
 .footer_contect li a[href*="www"]:before {
-position: absolute;
-left:-25px;
-top:0;
-content:'\f245';
-font-family: 'fontawesome';
-@include font-size(15px);
+	position: absolute;
+	left: -25px;
+	top: 0;
+	content: '\f245';
+	font-family: 'fontawesome';
+	@include font-size(15px);
 }
+
 .footer_contect li span {
 	position: relative;
 }
+
 .footer_contect li span:before {
-position: absolute;
-left:-25px;
-top:0;
-content:'\f041';
-font-family: 'fontawesome';
-@include font-size(23px);
+	position: absolute;
+	left: -25px;
+	top: 0;
+	content: '\f041';
+	font-family: 'fontawesome';
+	@include font-size(23px);
 }
-
-
-

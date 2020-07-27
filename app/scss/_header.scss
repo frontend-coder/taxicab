@@ -1,9 +1,9 @@
-
 .header_fon {
-	background:transparent url('../img/header_fon.jpg') center center no-repeat;
+	background: transparent url('../img/header_fon.jpg') center center no-repeat;
 	background-size: cover;
 	min-height: 740px;
 	position: relative;
+	background-attachment: fixed;
 }
 
 .header_fon:before {
@@ -11,16 +11,18 @@
 	background-color: rgba(#0f0f0f, .7);
 	width: 100%;
 	height: 100%;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	position: absolute;
 }
+
 .mobile_box {
 	position: relative;
 	width: 56px;
 	height: 56px;
 	display: none;
 }
+
 .top_line {
 	padding: 24px 0;
 
@@ -35,12 +37,12 @@
 	margin: 0 auto;
 }
 
-.logo{
+.logo {
 	padding: 0;
 	margin: 0;
 }
 
-.logo img{
+.logo img {
 	display: inline-block;
 	width: 100%;
 	height: auto;
@@ -62,14 +64,14 @@
 	line-height: 1.2;
 	text-transform: uppercase;
 	text-decoration: none;
-	color:#fff;
+	color: #fff;
 	padding: 10px 20px;
 	border-radius: 18px;
 	@include transition(all, 0.3s, ease);
 }
 
 .top_line_menu ul li a:hover {
-	background-color:  $accent_color;
+	background-color: $accent_color;
 }
 
 .header_content {
@@ -80,11 +82,11 @@
 
 .header_content_car {
 	background: url(../img/header_fon_car.jpg.png) center center no-repeat;
-	content:'' ;
+	content: '';
 	z-index: 3;
 	position: absolute;
 	bottom: -15%;
-	left:50%;
+	left: 50%;
 	width: 826px;
 	height: 484px;
 	margin-left: -(826 / 2) * 1px;
@@ -99,7 +101,7 @@
 
 .header_phone,
 .header_link {
-	color:#fff;
+	color: #fff;
 	@include font-size(72px);
 	text-decoration: none;
 	display: block;
@@ -115,7 +117,7 @@
 
 .header_phone:hover,
 .header_link:hover {
-	color: darken(#fff, 50% );
+	color: darken(#fff, 50%);
 }
 
 .yellow_block_wrap {
@@ -161,7 +163,7 @@
 	background-color: #000000;
 	@include font-size(34px);
 	text-transform: uppercase;
-	color:#fff;
+	color: #fff;
 	font-family: "LatoBlack", sans-serif;
 }
 
@@ -180,10 +182,10 @@
 .form_book_input {
 	padding: 5px 10px;
 	background-color: #fff;
-	@include font-size(20px);
-	color:#000;
+	font-size: 1.17rem;
+	color: #000;
 	font-family: "LatoSemiBold", sans-serif;
-	border:none;
+	border: none;
 	border-bottom: 1px solid #e4e4e4;
 	width: 48%;
 	height: 40px;
@@ -203,7 +205,7 @@
 	display: block;
 	width: 100%;
 	background-color: #131313;
-	color:#fff;
+	color: #fff;
 	text-transform: uppercase;
 	border-radius: 10px;
 	cursor: pointer;
@@ -214,7 +216,7 @@
 	padding: 14px 34px;
 	font-family: "BebasNeueBold", sans-serif;
 	@include font-size(29px);
-	color:#fff;
+	color: #fff;
 	border-radius: 10px;
 	background-color: #000;
 	text-transform: uppercase;
@@ -244,23 +246,23 @@
 
 .tarif_items:before {
 	right: -35px;
-	bottom:-7px;
+	bottom: -7px;
 	position: absolute;
 	@include triangle(55px, down, #000);
 	transform: rotate(-45deg);
-	color:$accent_color;
+	color: $accent_color;
 	content: '';
 	opacity: 0;
 }
 
 .tarif_items:after {
 	right: 12px;
-	bottom:9px;
+	bottom: 9px;
 	position: absolute;
 	@include font-size(30px);
 	content: '\f005';
 	font-family: 'fontawesome';
-	color:$accent_color;
+	color: $accent_color;
 	opacity: 0;
 }
 
@@ -273,7 +275,7 @@
 	opacity: 1;
 }
 
-.tarif_items:hover .tarif_price{
+.tarif_items:hover .tarif_price {
 	color: #000;
 }
 
@@ -299,20 +301,20 @@
 	text-transform: uppercase;
 	font-family: "LatoBlack", sans-serif;
 	margin-bottom: 40px;
-	color:$accent_color;
+	color: $accent_color;
 }
 
 .tarif_items .sector_button {
 	background-color: $accent_color;
-	color:#000;
+	color: #000;
 	font-weight: 800;
 }
 
 .tarif_items_car {
 	position: absolute;
-	left:0;
+	left: 0;
 	// 	top:-75px;
-	transform:translateY(-115%);
+	transform: translateY(-115%);
 }
 
 .block_tarif {
@@ -328,17 +330,18 @@
 
 .tarif_title span {
 	display: block;
-	color:$accent_color;
+	color: $accent_color;
 	@include font-size(35px);
 }
 
 .block_wish {
 	padding: 70px 0;
-	background:transparent url('../img/you-wish.jpg') center center no-repeat;
+	background: transparent url('../img/you-wish.jpg') center center no-repeat;
 	background-size: cover;
 	min-height: 740px;
 	position: relative;
 	text-align: center;
+	background-attachment: fixed;
 }
 
 .header_fon:before {
@@ -346,8 +349,8 @@
 	background-color: rgba(#0f0f0f, .7);
 	width: 100%;
 	height: 100%;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	position: absolute;
 }
 
@@ -356,7 +359,7 @@
 	@include font-size(35px);
 	margin-bottom: 10px;
 	display: inline-block;
-	color:$accent_color;
+	color: $accent_color;
 	text-transform: uppercase;
 	font-family: "LatoBlack", sans-serif;
 }
@@ -366,7 +369,7 @@
 	@include font-size(35px);
 	margin-bottom: 90px;
 	display: block;
-	color:#fff;
+	color: #fff;
 	text-transform: uppercase;
 	font-family: "LatoBlack", sans-serif;
 }
@@ -389,7 +392,7 @@
 	height: 72px;
 	border-radius: 50%;
 	background-color: $accent_color;
-	color:#000;
+	color: #000;
 	@include font-size(30px);
 	display: flex;
 	justify-content: center;
@@ -398,14 +401,14 @@
 
 .wish_wrap_item_content {
 	position: relative;
-	color:#fff;
+	color: #fff;
 	width: 80%;
 }
 
 .wish_wrap_item_content h3 {
 	text-align: left;
 	text-transform: uppercase;
-	color:$accent_color;
+	color: $accent_color;
 	margin-bottom: 18px;
 }
 
@@ -415,7 +418,7 @@
 
 .block_wish .sector_button {
 	background-color: $accent_color;
-	color:#000;
+	color: #000;
 }
 
 .block_best {
@@ -424,16 +427,17 @@
 }
 
 .block_best .wish_title {
-	color:#000;
+	color: #000;
 }
 
 .best_item_content {
 	padding: 0 200px 0 100px;
-	width: 100% - ( (375 / 1140) *100% );
+	width: 100% - ((375 / 1140) *100%);
 }
 
 .best_item_picture {
 	width: (375 / 1140) *100%;
+
 	& img {
 		display: block;
 		width: 100%;
@@ -460,40 +464,40 @@
 	display: flex;
 }
 
-.best_item_list li  {
+.best_item_list li {
 	margin-right: 12px;
 }
 
 .google_button {
-	background:transparent url('../img/google-button.png') center center no-repeat;
+	background: transparent url('../img/google-button.png') center center no-repeat;
 	background-size: 210px 65px;
 	width: 210px;
-	height:65px ;
+	height: 65px;
 	display: block;
 }
 
 .apple_button {
-	background:transparent url('../img/apple-button.png') center center no-repeat;
+	background: transparent url('../img/apple-button.png') center center no-repeat;
 	background-size: cover;
 	width: 210px;
-	height:65px ;
+	height: 65px;
 	display: block;
 }
 
 .block_or {
-	background-color:  $accent_color;
+	background-color: $accent_color;
 	padding: 70px 0 95px 0;
 	text-align: center;
 }
 
 .block_or .wish_title {
 	margin-bottom: 40px;
-	color:#000;
+	color: #000;
 	font-family: "LatoBlack", sans-serif;
 }
 
 .block_or .header_phone {
-	color:#000;
+	color: #000;
 	font-family: "LatoBlack", sans-serif;
 }
 
@@ -503,21 +507,22 @@
 
 
 .block_testimonials {
-	background:transparent url('../img/testimonials-fon.jpg') center center no-repeat;
+	background: transparent url('../img/testimonials-fon.jpg') center center no-repeat;
 	background-size: cover;
 	// min-height: 740px;
 	position: relative;
 	padding: 100px 0 75px 0;
 	text-align: center;
+	background-attachment: fixed;
 }
 
 .block_testimonials:before {
 	content: '';
-	background-color: rgba(#0f0f0f, .7);
+	background-color: rgba(#0f0f0f, .5);
 	width: 100%;
 	height: 100%;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	position: absolute;
 }
 
@@ -527,47 +532,59 @@
 .item-trademark {
 	padding: 40px 52px 50px 52px;
 	background-color: #040707;
-	color:#fff;
+	color: #fff;
+	border-radius: 30px;
 }
+
 .item-cont {
 	@include font-size(18px);
 	text-align: left;
 	margin-bottom: 20px;
 }
+
 .item-cont_client {
 	display: flex;
 
 }
+
 .item-cont_client img {
 	width: 75px;
 	height: 75px;
 	border-radius: 50%;
 }
+
 .item-cont_text {
 	text-align: left;
 	margin-left: 10px;
 }
+
 .item-cont_text h3 {
-@include font-size(25px);
-color:$accent_color;
-text-transform: uppercase;
+	@include font-size(25px);
+	color: $accent_color;
+	text-transform: uppercase;
 }
+
 .item-cont_text {
-@include font-size(18px);
-text-transform: uppercase;
+	@include font-size(18px);
+	text-transform: uppercase;
 }
 
 
 
-.slick-slide {padding: 0 15px;}
+.slick-slide {
+	padding: 0 15px;
+}
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
 	font-family: 'fontawesome';
 
 }
+
 .slick-prev:before {
-	content:'\f104';
+	content: '\f104';
 }
+
 .slick-next:before {
-	content:'\f105';
+	content: '\f105';
 }
