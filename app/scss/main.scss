@@ -4,22 +4,24 @@
 *::-webkit-input-placeholder {
 	font-family: "LatoSemiBold", sans-serif;
 
-color:#202020;
-opacity: 1;
+	color: #202020;
+	opacity: 1;
 }
 
 *::-moz-placeholder {
 	font-family: "LatoSemiBold", sans-serif;
 
-color: $placeholdercolortext;
+	color: $placeholdercolortext;
 	opacity: 1;
 }
+
 *::-ms-input-placeholder {
 	font-family: "LatoSemiBold", sans-serif;
 
-color: $placeholdercolortext;
+	color: $placeholdercolortext;
 	opacity: 1;
 }
+
 ::placeholder {
 	font-family: "LatoSemiBold", sans-serif;
 	color: $placeholdercolortext;
@@ -32,15 +34,15 @@ color: $placeholdercolortext;
 
 @import "fonts";
 
-html{
-width: 100%;
-/* height: 100%; */
-font-size: $body_fontsize;
-line-height: $body_lineheight;
-margin:0;
-padding:0;
--webkit-backface-visibility:hidden;
-/* overflow-x: hidden; */
+html {
+	width: 100%;
+	/* height: 100%; */
+	font-size: $body_fontsize;
+	line-height: $body_lineheight;
+	margin: 0;
+	padding: 0;
+	-webkit-backface-visibility: hidden;
+	/* overflow-x: hidden; */
 }
 
 body {
@@ -52,22 +54,31 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $body_color_text;
-	input, textarea {
+
+	input,
+	textarea {
 		border: #666 1px solid;
 		outline: none;
+
 		&:focus:required:invalid {
 			border-color: red;
 		}
+
 		&:required:valid {
 			border-color: green;
 		}
 	}
 }
 
+body.stop {
+	overflow: hidden;
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
 	height: auto;
+
 	&.img-width {
 		width: 100%;
 	}
@@ -80,13 +91,3 @@ body {
 @import "singleheader"; // стили шапки сайта
 @import "footer"; // стили шапки сайта
 @import "media"; // Always at the end
-
-
-
-
-
-
-
-
-
-

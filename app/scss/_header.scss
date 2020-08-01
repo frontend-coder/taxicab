@@ -83,9 +83,14 @@
 	@include transition(all, 0.3s, ease);
 }
 
-nav.menu-site ul li a.mPS2id-highlight,
+.top_line_menu ul li a.mPS2id-highlight,
 .top_line_menu ul li a:hover {
 	background-color: $accent_color;
+	color: #fff;
+}
+
+nav.nav ul li a.mPS2id-highlight {
+	color: $accent_color;
 }
 
 .header_content {

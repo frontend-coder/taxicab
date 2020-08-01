@@ -1022,6 +1022,7 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"He
 body input,body textarea{border:1px solid #666;outline:0}
 body input:focus:required:invalid,body textarea:focus:required:invalid{border-color:red}
 body input:required:valid,body textarea:required:valid{border-color:green}
+body.stop{overflow:hidden}
 .img-responsive{display:block;max-width:100%;height:auto}
 .img-responsive.img-width{width:100%}
 .header_fon{background:url(../img/header_fon.jpg) center center/cover no-repeat fixed;min-height:740px;position:relative}
@@ -1034,7 +1035,8 @@ body input:required:valid,body textarea:required:valid{border-color:green}
 .top_line_menu{padding:0;margin:0}
 .top_line_menu ul{list-style:none;display:flex}
 .top_line_menu ul li a{font-family:LatoBlack,sans-serif;font-size:1.0625rem;line-height:1.2;text-transform:uppercase;text-decoration:none;color:#fff;padding:10px 20px;border-radius:18px;margin-right:3px;margin-left:3px;transition:.3s}
-.top_line_menu ul li a:hover,nav.menu-site ul li a.mPS2id-highlight{background-color:#ffc61a}
+.top_line_menu ul li a.mPS2id-highlight,.top_line_menu ul li a:hover{background-color:#ffc61a;color:#fff}
+nav.nav ul li a.mPS2id-highlight{color:#ffc61a}
 .header_content{margin-top:40px;text-align:center;position:relative}
 .header_content_car{background:url(../img/header_fon_car.jpg.png) center center no-repeat;content:'';z-index:3;position:absolute;bottom:-15%;left:50%;width:826px;height:484px;margin-left:-413px}
 .header_title{color:#ffc61a;font-size:2.1875rem;text-transform:uppercase}
@@ -1139,6 +1141,32 @@ body input:required:valid,body textarea:required:valid{border-color:green}
 .select-options li[rel=hide]{display:none}
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current{background:#e6ad00;box-shadow:#e6ad00 0 1px 3px 0 inset}
 .xdsoft_datetimepicker .xdsoft_calendar td:hover,.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover{color:#fff!important;background:#ffc61a!important}
+.menu-icon{height:20px;width:25px;position:relative}
+.menu-icon:hover{cursor:pointer}
+.menu-icon:hover .menu-icon__bar{opacity:.6}
+.menu-icon__bar{position:absolute;top:50%;height:2px;width:100%;background-color:#fff;display:block;transition:opacity .3s}
+.menu-icon__bar::after,.menu-icon__bar::before{height:2px;width:100%;content:"";background-color:#fff;display:block;position:absolute;transition:transform .5s}
+.menu-icon__bar::before{top:-10px}
+.menu-icon__bar::after{bottom:-10px}
+.menu-icon--open .menu-icon{position:relative}
+.menu-icon--open .menu-icon__bar{background:0 0}
+.menu-icon--open .menu-icon__bar::after,.menu-icon--open .menu-icon__bar::before{top:50%;transform:translateY(-50%)}
+.menu-icon--open .menu-icon__bar::after{transform:rotate(135deg)}
+.menu-icon--open .menu-icon__bar::before{transform:rotate(-135deg)}
+.nav{position:fixed;top:80px;padding:20px;right:-150%;background-color:#222;transition:right .6s;width:55%}
+.nav--active{position:fixed;top:80px;right:0;z-index:25}
+.nav__list{padding-left:0;list-style:none}
+.nav__item{margin-bottom:10px;text-align:left}
+.nav__link{position:relative;color:#fff;text-decoration:none}
+.nav__link--minus::after,.nav__link--plus::after{color:#fff;font-family:FontAwesome;font-size:10px;position:absolute;top:50%;right:-20px;transform:translateY(-50%)}
+.nav__link--plus::after{content:""}
+.nav__link--minus{color:#c14500}
+.nav__link--minus::after{content:"";color:#c14500}
+.nav__link:hover{opacity:.6}
+.nav__sub-list{margin-top:10px;margin-bottom:10px;padding-top:10px;padding-bottom:10px;border-top:1px solid rgba(255,255,255,.6);border-bottom:1px solid rgba(255,255,255,.6);displaY:none;list-style:none;padding-left:10px}
+.nav__sub-list--active{display:block}
+.nav__sub-item .nav__link{color:rgba(255,255,255,.6)}
+.nav__sub-item:not(:last-child){padding-bottom:10px}
 .heagerclass{font-size:2rem;background-color:red;padding:50px 0}
 .heagerclass_title{color:#fff}
 footer{padding:70px 0 0;background:url(../img/header_fon.jpg) center center/cover no-repeat fixed;min-height:490px;position:relative}
@@ -1210,7 +1238,7 @@ footer{padding:50px 0 0}
 }
 @media (max-width:834px){
 .top_line_menu{display:none}
-.mobile_box{display:block}
+.mobile_box{display:block;display:flex;justify-content:center;align-items:center}
 .container{width:100%;padding-left:15px;padding-right:15px}
 .block_testimonials .container{padding-left:30px;padding-right:30px}
 }
@@ -1245,6 +1273,7 @@ footer{padding:50px 0 0}
 }
 @media (max-width:480px){
 .header_content_car{background:url(../img/header_fon_car_320.png) center center no-repeat;bottom:-100%;transform:translateY(-164%);left:50%;width:320px;height:187px;margin-left:-169px}
+.nav{width:70%}
 body,html{overflow-x:hidden}
 .menu__list{width:440px}
 .menu__list--active,.top_menu_active{justify-content:flex-start}
