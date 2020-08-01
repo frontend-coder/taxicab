@@ -4,7 +4,7 @@
 
 
 .block_order {
-background-color: $accent_color;
+	background-color: $accent_color;
 
 }
 
@@ -25,20 +25,21 @@ background-color: $accent_color;
 // стилизация навигации для сайта
 
 .humburger {
-	top:0;
-	right:9.7%;
+	top: 0;
+	right: 9.7%;
 	padding: 0;
-	background:none;
+	background: none;
 	@include transition(all, 2.5s, ease);
 	cursor: pointer;
 	display: block;
 	border: 3px solid rgb(233, 234, 226);
 	width: 50px;
 	height: 50px;
-display: flex;
+	display: flex;
 	position: absolute;
 
 }
+
 .nenu_humburger span {
 	margin: auto;
 	height: 3px;
@@ -46,22 +47,26 @@ display: flex;
 	background-color: rgb(233, 234, 226);
 	display: block;
 
-	&:after,&:before {
+	&:after,
+	&:before {
 		width: 30px;
 		height: 3px;
 		background-color: rgb(233, 234, 226);
 		display: block;
-		margin:0 auto;
+		margin: 0 auto;
 		content: '';
 	}
+
 	&:after {
 		transform: translateY(7px);
 	}
+
 	&:before {
 		transform: translateY(-11px);
 	}
 
 }
+
 .menu,
 .menu__list {
 	@include transition(all, 2.5s, ease);
@@ -69,9 +74,10 @@ display: flex;
 
 .humburger:active,
 .humburger:hover {
-	border-color:#f8c255;
+	border-color: #f8c255;
 	@include transition(all, 2.5s, ease);
 }
+
 .humburger:active.nenu_humburger span,
 .humburger:active.nenu_humburger span:before,
 .humburger:active.nenu_humburger span:after,
@@ -85,8 +91,9 @@ display: flex;
 .humburger_active {
 
 	border-color: #f8c255;
-z-index: 1; // чтобы крестик был выше меню
+	z-index: 1; // чтобы крестик был выше меню
 }
+
 .humburger_active:hover,
 .humburger_active:active {
 	border-color: #f8c255;
@@ -99,15 +106,16 @@ z-index: 1; // чтобы крестик был выше меню
 }
 
 .humburger_active span {
-	transform:rotate(45deg);
+	transform: rotate(45deg);
 
 }
 
 .humburger_active span:after {
-	transform:rotate(-90deg);
+	transform: rotate(-90deg);
 	position: relative;
 	z-index: 1;
 }
+
 .humburger_active span:before {
 	display: none;
 }
@@ -116,11 +124,11 @@ z-index: 1; // чтобы крестик был выше меню
 .menu__list {
 	position: absolute;
 	background-color: #f8c255;
-	top:0;
+	top: 0;
 	right: 5px;
 	width: 720px;
 	height: 50px;
-	list-style:none;
+	list-style: none;
 	align-items: center;
 	padding-right: 56px;
 	justify-content: space-between;
@@ -128,6 +136,7 @@ z-index: 1; // чтобы крестик был выше меню
 	z-index: -99999;
 	@include transition(display, 10.5s, ease);
 }
+
 .menu__list--active,
 .top_menu_active {
 	display: flex;
@@ -137,14 +146,134 @@ z-index: 1; // чтобы крестик был выше меню
 
 
 .menu ul li a {
-@include font-size(14px);
+	@include font-size(14px);
 	padding: 10px;
-	color:#fff;
+	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	@include transition(all, 0.5s, ease);
 }
-.menu ul li a:hover {
-	color:#000;
 
+.menu ul li a:hover {
+	color: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+.select-hidden {
+	display: none;
+	visibility: hidden;
+	padding-right: 10px;
+}
+
+.select {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	color: #000;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+.select-styled {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	// padding: 8px 15px;
+	transition: all 0.2s ease-in;
+	//	padding: 5px 10px;
+	padding-left: 10px;
+	background-color: #fff;
+	font-size: 1.17rem;
+	color: #000;
+	font-family: LatoSemiBold,
+		sans-serif;
+	border: none;
+	border-bottom: 1px solid #e4e4e4;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+.select-styled:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-color: #000 transparent transparent transparent;
+	position: absolute;
+	top: 16px;
+	right: 10px;
+}
+
+.select-styled:hover {
+	background-color: darken(#fff, 10%);
+}
+
+.select-styled:active,
+.select-styled.active {
+	background-color: darken(#fff, 10%);
+}
+
+.select-styled:active:after,
+.select-styled.active:after {
+	top: 9px;
+	border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #eee;
+}
+
+.select-options li {
+	margin: 0;
+	padding: 5px 0;
+	text-indent: 15px;
+	border-top: 1px solid #eee;
+	transition: all 0.15s ease-in;
+}
+
+.select-options li:hover {
+	color: #ffc61a;
+	background: #fff;
+}
+
+.select-options li[rel="hide"] {
+	display: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+	background: darken(#ffc61a, 10%);
+	box-shadow: darken(#ffc61a, 10%) 0 1px 3px 0 inset;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover {
+	color: #fff !important;
+	background: #ffc61a !important;
 }

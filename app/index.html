@@ -30,6 +30,7 @@
 		}
 	</style>
 	<link rel="stylesheet" href="css/libs.min.css" />
+
 </head>
 
 <body>
@@ -40,7 +41,7 @@
 				<div class="logo">
 					<img src="img/logo.png" alt="логотип сайта">
 				</div>
-				<nav class="top_line_menu">
+				<nav class="menu-site top_line_menu">
 					<ul>
 						<li><a href="#header" title="Это ссылка">Главная</a></li>
 						<li><a href="#price" title="Это ссылка">Цены</a></li>
@@ -53,7 +54,7 @@
 				</nav>
 				<div class="mobile_box">
 
-					<nav class="menu">
+					<nav class="menu-site menu">
 						<ul class="menu__list">
 							<li><a href="#header" title="Это ссылка">Главная</a></li>
 							<li><a href="#price" title="Это ссылка">Цены</a></li>
@@ -103,13 +104,25 @@
 						<div class="bookacab_block">
 							<div class="bookacab_block_title">заказать такси</div>
 							<form class="form_book">
-								<input class="form_book_input" name="name" type="text" placeholder="Имя">
-								<input class="form_book_input" name="phone" type="tel" placeholder="+7(999) 999-99-99">
-								<input class="form_book_input" type="text" placeholder="Когда">
-								<input class="form_book_input" type="text" placeholder="Время">
-								<input class="form_book_input" type="text" placeholder="Начало">
-								<input class="form_book_input" type="text" placeholder="Конец">
-								<input class="form_book_input form_book_input_choice" type="text" placeholder="Вид транспорта">
+								<input class="form_book_input" name="Имя" type="text" placeholder="Имя">
+								<input class="form_book_input" name="Телефон" type="tel" placeholder="+7(999) 999-99-99">
+
+
+								<input class="form_book_input" type="text" name="Откуда ехать" placeholder="Где вы находитесь">
+								<input class="form_book_input" type="text" name="Куда ехать" placeholder="Куда ехать">
+
+
+
+								<input id="start_go" class="form_book_input" type="text" placeholder="Время подачи">
+								<input id="end_go" class="form_book_input" type="text" placeholder="Время доставки">
+
+								<select id="year" class="form_book_input2 form_book_input_choice2" name="Вид транспорта">
+									<option value="hide">Вид транспорта</option>
+									<option value="седан">седан</option>
+									<option value="грузовик">грузовик</option>
+									<option value="автобус">автобус</option>
+									<option value="вертолет">вертолет</option>
+								</select>
 								<input class="form_book_submit" type="submit" value="отправить">
 							</form>
 						</div>

@@ -68,12 +68,27 @@ function scripts() {
 		'app/libs/plagins/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.js',
 		'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
 		'app/libs/plagins/slick/slick.min.js',
+		'app/libs/plagins/datepicker/jquery.datetimepicker.full.js',
+		'app/libs/plagins/jQuery-Custom-Select-Box-Replacement-Selectbox/js/jquery.selectbox-0.2.min.js',
+
+
+
+
+
+
+
+
+
+
+
+
+
 		'app/libs/common.js'
 	])
 		.pipe(strip())
 		.pipe(rigger())
 		.pipe(concat('scripts.min.js'))
-		.pipe(uglify())
+	//	.pipe(uglify())
 		.pipe(dest('app/js/'))
 		.pipe(browserSync.stream())
 }
